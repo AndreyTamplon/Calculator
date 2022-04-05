@@ -1,0 +1,13 @@
+DEFINE a 4
+PUSH a
+SQRT
+SQRT
+PUSH 7
+ADDITION
+DEFINE CCFIT 77
+PUSH CCFIT
+PRINT
+SQRT
+PRINT
+SUBTRACTION
+PRINT C:\Users\andre\IdeaProjects\Calculator\src\main\java\a.txt
