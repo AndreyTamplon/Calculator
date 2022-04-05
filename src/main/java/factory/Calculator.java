@@ -1,7 +1,6 @@
 package factory;
 
 import context.ExecutionContext;
-import exceptions.CalculatorException;
 import exceptions.InvalidOperator;
 import operation_executor.Operation;
 import operators.Operator;
@@ -33,10 +32,11 @@ public abstract class Calculator
         {
             logger.log(Level.SEVERE, String.format("Failed to create an %s due to", operatorName), e);
         }
-        catch (CalculatorException e)
+        catch (Exception e)
         {
             logger.log(Level.SEVERE, String.format("Failed to execute an %s due to", operatorName), e);
         }
+
     }
     protected abstract Operator createOperator(String operatorName)
             throws InvalidOperator;
