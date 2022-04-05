@@ -41,7 +41,7 @@ class PushTest
     @DisplayName("The correct number of arguments and the wrong type of some of them")
     void correctNumberOfArgumentWrongArgumentsType()
     {
-        arguments.add("9 mm");
+        arguments.add("WrongArgument");
         assertThrows(InvalidArgumentTypeException.class, ()->
         {
             pushOperator.execute(executionContext, arguments);
