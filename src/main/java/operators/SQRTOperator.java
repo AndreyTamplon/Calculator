@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 
 import static java.lang.Math.sqrt;
 
-public class SQRTOperator implements Operator<ExecutionContext, List<String>>
+public class SQRTOperator implements Operator
 {
     private static final Logger logger = Logger.getLogger(SQRTOperator.class.getName());
     @Override

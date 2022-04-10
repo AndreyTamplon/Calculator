@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class MultiplicationOperator implements Operator<ExecutionContext, List<String>>
+public class MultiplicationOperator implements Operator
 {
     private static final Logger logger = Logger.getLogger(MultiplicationOperator.class.getName());
     @Override

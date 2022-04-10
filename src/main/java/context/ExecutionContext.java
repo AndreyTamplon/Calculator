@@ -21,5 +21,5 @@ public class ExecutionContext
     public Map<String, Double> getParameters()
     {
         return parameters;
-    } // возможно стоит удалить
+    }
 }

@@ -15,7 +15,7 @@ import java.util.logging.Logger;
 import static org.apache.commons.lang3.math.NumberUtils.createDouble;
 import static org.apache.commons.lang3.math.NumberUtils.isParsable;
 
-public class PushOperator implements Operator<ExecutionContext, List<String>>
+public class PushOperator implements Operator
 {
     private static final Logger logger = Logger.getLogger(PushOperator.class.getName());
     @Override

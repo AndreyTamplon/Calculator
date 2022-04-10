@@ -1,8 +1,11 @@
 package operation_executor;
+
 import exceptions.CalculatorException;
+import exceptions.CouldNotConfigureException;
 import exceptions.ParsingException;
 import factory.Calculator;
 import factory.SimpleCalculator;
+
 import java.util.List;
 import java.util.logging.Logger;
 
@@ -20,7 +23,7 @@ public class OperationProcessor
         {
             calculator = new SimpleCalculator(configurationFileName);
         }
-        catch (CalculatorException e)
+        catch (CouldNotConfigureException e)
         {
             throw new CalculatorException("Failed to create calculator");
         }
@@ -41,11 +44,11 @@ public class OperationProcessor
         }
         catch (ParsingException e)
         {
-            throw new ParsingException("Couldn't parse file");
+            throw new CalculatorException("Couldn't parse file with operations");
         }
 
         List<Operation> operationList = operationsFileParser.getOperationsList();
-        for(Operation operation : operationList)
+        for (Operation operation : operationList)
         {
             calculator.executeOperation(operation);
         }

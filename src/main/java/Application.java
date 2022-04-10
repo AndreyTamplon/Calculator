@@ -10,13 +10,13 @@ public class Application
 {
     private static final Logger logger = Logger.getLogger(Application.class.getName());
 
-    public static void main(String[] args) throws IOException, CalculatorException
+    public static void main(String[] args)
     {
         try
         {
             LogManager.getLogManager().readConfiguration(Application.class.getResourceAsStream("logger.properties"));
         }
-        catch (NullPointerException e)
+        catch (NullPointerException | IOException e)
         {
             logger.log(Level.SEVERE, "Couldn't configure logger", e);
         }

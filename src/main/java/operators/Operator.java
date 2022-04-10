@@ -1,8 +1,11 @@
 package operators;
 
+import context.ExecutionContext;
 import exceptions.*;
 
-public interface Operator<U, A>
+import java.util.List;
+
+public interface Operator
 {
-    void execute(U executionContext, A arguments) throws CalculatorException;
+    void execute(ExecutionContext executionContext, List<String> arguments) throws CalculatorException;
 }

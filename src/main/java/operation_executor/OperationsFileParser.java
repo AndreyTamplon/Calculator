@@ -61,7 +61,7 @@ public class OperationsFileParser
         {
             text = readFile();
         }
-        catch (ParsingException e)
+        catch (ResourceNotFoundException e)
         {
             throw new ParsingException("The file could not be parsed because there was a problem with opening it");
         }

@@ -13,7 +13,7 @@ import java.util.logging.Logger;
 import static org.apache.commons.lang3.math.NumberUtils.createDouble;
 import static org.apache.commons.lang3.math.NumberUtils.isParsable;
 
-public class DefineOperator implements Operator<ExecutionContext, List<String>>
+public class DefineOperator implements Operator
 {
     private static final Logger logger = Logger.getLogger(DefineOperator.class.getName());
     @Override

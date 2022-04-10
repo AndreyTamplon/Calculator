@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class PrintOperator implements Operator<ExecutionContext, List<String>>
+public class PrintOperator implements Operator
 {
     private static final Logger logger = Logger.getLogger(PrintOperator.class.getName());
     @Override
